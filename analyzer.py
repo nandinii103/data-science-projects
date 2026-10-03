@@ -21,3 +21,10 @@ df_cleaned = df.fillna(50)
 print("filled missing value and empty spaces")
 print(df_cleaned)
 
+df_cleaned["Total"] = df_cleaned.sum(axis=1)
+
+df_cleaned["Average"] = df_cleaned.mean(axis=1)
+
+print("Total and Average Marks")
+print(df_cleaned)
+
