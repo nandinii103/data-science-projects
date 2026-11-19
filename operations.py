@@ -1,9 +1,36 @@
-t1 = (1.5 , 10 , True , "hello")
-t2 = (12 , 13 , 12 , 45 , 67)
-t2 = t2 + (9 ,)
-t3 = t2.count(12)
-slicing = t2[0:3]
-print(t1)
-print(t2)
-print(t3)
-print(slicing)
+import random
+import math
+print("Random fun calculator")
+lucky_number = random.randint(1,100)
+print("yourlucky number is" , lucky_number)
+
+activities =[
+    "play football" ,
+    "swim in swimming pool" ,
+    "draw a picture" ,
+    "read a book" ,
+    "try coding"
+]
+
+activity = random.choice(activities)
+print("Todays activity is" , activity)
+
+print("Number Guessing Game")
+secret_num = random.randint(1,10)
+
+guess = int(input("Guess a number between 1-10"))
+
+if guess == secret_num:
+    print("you guessed correctly")
+else:
+    print("wrong! The number is" , secret_num)
+
+print("math functions")
+
+num = 4.67
+
+print("round up" , num , "=" ,math.ceil(num))
+print("round down" , num , "=" , math.floor(num))
+print("fabs" , num ,"=" , math.fabs(-15))
+print("copysign" , num ,"=" , math.copysign(5 , -2))
+print("gcd" ,num , "=" , math.gcd(12,18))
