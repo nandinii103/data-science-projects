@@ -1,21 +1,9 @@
-import numpy as np
-numbers = np.array([100,67,576,35,942,172,193])
-print(numbers)
-
-sort = np.sort(numbers)
-print(sort)
-
-maximum = np.max(numbers)
-print(maximum)
-
-minimum = np.min(numbers)
-print(minimum)
-
-total = np.sum(numbers)
-print(total)
-
-average = np.mean(numbers)
-print(average)
-
-count = len(numbers)
-print(count)
+t1 = (1.5 , 10 , True , "hello")
+t2 = (12 , 13 , 12 , 45 , 67)
+t2 = t2 + (9 ,)
+t3 = t2.count(12)
+slicing = t2[0:3]
+print(t1)
+print(t2)
+print(t3)
+print(slicing)
